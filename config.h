@@ -1,6 +1,6 @@
 /* user and group to drop privileges to */
-static const char *user  = "rusk";
-static const char *group = "wheel";
+static const char *user  = "user";
+static const char *group = "nogroup";
 
 static const char *colorname[NUMCOLS] = {
 	[INIT] =   "black",     /* after initialization */
@@ -23,3 +23,6 @@ static const char * font_name = "6x13";
 
 /* allow control key to trigger fail on clear */
 static const int controlkeyclear = 0;
+
+/* time in seconds to cancel lock with mouse movement */
+static const int timetocancel = 4;
